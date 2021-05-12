@@ -1,0 +1,50 @@
+{
+	"name": "markdown-continue",
+	"publisher": "tejasvi",
+	"displayName": "Markdown Continue",
+	"description": "Continue lists and quotes on pressing enter.",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.0.0"
+	},
+	"categories": [
+		"Programming Languages",
+		"Formatters",
+		"Other"
+	],
+	"keywords": ["keybinds", "markdown", "lists"],
+	"author": {"name": "Tejasvi S. Tomar"},
+	"repository": {"type": "git", "url": "https://github.com/tejasvi/markdown-continue"},
+	"icon": "./assets/icon.jpg",
+	"bugs": {"url": "https://github.com/tejasvi/markdown-continue/issues"},
+	"activationEvents": [
+		"onCommand:markdown-continue.continueSequence",
+        "onLanguage:markdown"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"keybindings":[
+			{
+				"command": "markdown-continue.continueSequence",
+				"key": "enter",
+				"when": "resourceLangId == markdown && !neovim.mode || resourceLangId == markdown && neovim.mode == 'insert'"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.56.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0"
+	}
+}
