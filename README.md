@@ -1,6 +1,6 @@
 # Markdown Continue 
 
-[![VS Marketplace badge](http://vsmarketplacebadge.apphb.com/version-short/tejasvi.markdown-continue.svg)](https://marketplace.visualstudio.com/items?itemName=tejasvi.markdown-continue&ssr=false#review-details)
+[![VS Marketplace badge](https://vsmarketplacebadge.apphb.com/version-short/tejasvi.markdown-continue.svg)](https://marketplace.visualstudio.com/items?itemName=tejasvi.markdown-continue&ssr=false#review-details)
 
 Continue lists and blockquotes on pressing enter. Compatible with [Neo Vim](https://github.com/asvetliakov/vscode-neovim).
 
