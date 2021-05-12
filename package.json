@@ -3,7 +3,7 @@
 	"publisher": "tejasvi",
 	"displayName": "Markdown Continue",
 	"description": "Continue lists and quotes on pressing enter.",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"engines": {
 		"vscode": "^1.56.0"
 	},
