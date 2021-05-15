@@ -7,7 +7,12 @@
 	"engines": {
 		"vscode": "^1.56.0"
 	},
-	"license": "See LICENCE",
+	"license": "MIT",
+	"extensionKind": [
+		"workspace",
+		"web",
+		"ui"
+	],
 	"categories": [
 		"Programming Languages",
 		"Formatters",
@@ -19,7 +24,8 @@
 		"lists"
 	],
 	"author": {
-		"name": "Tejasvi"
+		"name": "Tejasvi S. Tomar",
+		"url": "https://mefyi.com"
 	},
 	"repository": {
 		"type": "git",
@@ -34,6 +40,8 @@
 		"onLanguage:markdown"
 	],
 	"main": "src/extension.js",
+	"web": "src/extension.js",
+	"sideEffects": false,
 	"contributes": {
 		"keybindings": [
 			{
